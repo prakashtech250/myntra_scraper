@@ -77,7 +77,6 @@ class myntraApi():
             return cookies
 
     def process_item(self, item):
-        # self.product_count +=1
         line = [item['Crawling Time'], item['Product Rank'] ,item['Product Url'], item['Category'], item['Name'], item['Brand'], item['Product Id'], item['Description'], item['Seller'], item['Average Rating'], item['Total Rating'], item['Total Reviews'],item['Star1 Count'], item['Star2 Count'], item['Star3 Count'], item['Star4 Count'], item['Star5 Count'], item['List Price'], item['Sale Price'], item['Product Details'], item['Fit'],item['Material'] ,item['Product Images']]
         self.ws.append(line)
         self.wb.save(self.filename)
